@@ -1428,35 +1428,14 @@
             border-bottom: 3px solid #C0392B;
         }
 
-        .project-card:nth-child(1) .project-visual::after {
-            content: '🥤';
-            position: relative;
-            z-index: 1;
-            filter: drop-shadow(0 0 40px #C0392B);
-        }
-
         .project-card:nth-child(2) .project-visual {
             --project-gradient: linear-gradient(135deg, #E63946, #F4A261);
             border-bottom: 3px solid #E63946;
         }
 
-        .project-card:nth-child(2) .project-visual::after {
-            content: '🍔';
-            position: relative;
-            z-index: 1;
-            filter: drop-shadow(0 0 40px #F4A261);
-        }
-
         .project-card:nth-child(3) .project-visual {
             --project-gradient: linear-gradient(135deg, #10B981, #059669);
             border-bottom: 3px solid #10B981;
-        }
-
-        .project-card:nth-child(3) .project-visual::after {
-            content: '🌱';
-            position: relative;
-            z-index: 1;
-            filter: drop-shadow(0 0 40px #10B981);
         }
 
         .project-content {
@@ -2300,7 +2279,9 @@
             <div class="projects-grid fade-up">
                 <!-- Project 1: Dr Pepper -->
                 <div class="project-card">
-                    <div class="project-visual"></div>
+                    <div class="project-visual">
+                        <img src="Dr paper.png" alt="Dr Pepper" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <div class="project-content">
                         <span class="project-type">🎯 BRAND MARKETING SITE</span>
                         <h3 class="project-title">Dr Pepper — High-Converting Website Concept</h3>
@@ -2330,7 +2311,9 @@
 
                 <!-- Project 2: First One -->
                 <div class="project-card">
-                    <div class="project-visual"></div>
+                    <div class="project-visual">
+                        <img src="First One.png" alt="First One" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <div class="project-content">
                         <span class="project-type">🍔 RESTAURANT DELIVERY PLATFORM</span>
                         <h3 class="project-title">First One — Food Delivery Website</h3>
@@ -2360,10 +2343,12 @@
 
                 <!-- Project 3: Falla7in -->
                 <div class="project-card">
-                    <div class="project-visual"></div>
+                    <div class="project-visual">
+                        <img src="falhin.png" alt="فلاحين" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <div class="project-content">
                         <span class="project-type">🌱 AI CONSULTATION PLATFORM</span>
-                        <h3 class="project-title">Falla7in — Smart Agricultural Platform</h3>
+                        <h3 class="project-title">فلاحين — Smart Agricultural Platform</h3>
                         <p class="project-description">An AI-powered agricultural consultation platform for Tunisian
                             farmers. Covers 12 crops across all 24 Tunisian governorates. Features an AI consultation
                             engine, product marketplace, and full Arabic RTL interface — serving 500+ farmers with free
