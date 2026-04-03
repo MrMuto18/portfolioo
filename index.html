@@ -821,76 +821,37 @@
             opacity: 0;
         }
 
-        .code-card {
+        .hero-image-container {
             background: var(--glass);
             backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            padding: var(--space-6);
-            transform: rotate(-5deg);
+            border-radius: 20px;
+            padding: var(--space-3);
+            transform: rotate(-2deg);
             box-shadow: 0 0 60px rgba(0, 212, 255, 0.15);
-            transition: transform 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            max-width: 450px;
+            margin: 0 auto;
         }
 
-        .code-card:hover {
-            transform: rotate(0deg);
+        .hero-image-container:hover {
+            transform: rotate(2deg) scale(1.02);
+            box-shadow: 0 0 80px rgba(124, 58, 237, 0.25);
+            border-color: var(--violet);
         }
 
-        .code-header {
-            display: flex;
-            align-items: center;
-            gap: var(--space-2);
-            margin-bottom: var(--space-4);
-            padding-bottom: var(--space-3);
-            border-bottom: 1px solid var(--glass-border);
+        .hero-profile-img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+            object-fit: cover;
+            filter: grayscale(0%);
+            transition: filter 0.3s ease;
         }
 
-        .code-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-        }
-
-        .code-dot.red {
-            background: #EF4444;
-        }
-
-        .code-dot.yellow {
-            background: #F59E0B;
-        }
-
-        .code-dot.green {
-            background: #10B981;
-        }
-
-        .code-filename {
-            margin-left: auto;
-            font-family: 'Courier New', monospace;
-            font-size: var(--text-sm);
-            color: var(--gray);
-        }
-
-        .code-content {
-            font-family: 'Courier New', monospace;
-            font-size: var(--text-sm);
-            line-height: 1.8;
-            color: var(--white);
-        }
-
-        .code-content .key {
-            color: #A78BFA;
-        }
-
-        .code-content .string {
-            color: #34D399;
-        }
-
-        .code-content .boolean {
-            color: #F59E0B;
-        }
-
-        .code-content .comment {
-            color: var(--gray);
+        .hero-image-container:hover .hero-profile-img {
+            filter: grayscale(0%);
         }
 
         .floating-badges {
@@ -1029,7 +990,7 @@
                 justify-content: center;
             }
 
-            .code-card {
+            .hero-image-container {
                 transform: rotate(0);
             }
 
@@ -2029,26 +1990,8 @@
             </div>
 
             <div class="hero-visual">
-                <div class="code-card">
-                    <div class="code-header">
-                        <span class="code-dot red"></span>
-                        <span class="code-dot yellow"></span>
-                        <span class="code-dot green"></span>
-                        <span class="code-filename">portfolio.js</span>
-                    </div>
-                    <div class="code-content">
-                        <span class="key">const</span> developer = {
-                        <span class="key">name</span>: <span class="string">"Koussay Abid"</span>,
-                        <span class="key">location</span>: <span class="string">"Tunisia 🇹🇳"</span>,
-                        <span class="key">skills</span>: [<span class="string">"HTML"</span>, <span
-                            class="string">"CSS"</span>, <span class="string">"JavaScript"</span>],
-                        <span class="key">currentlyBuilding</span>: <span class="string">"High-converting
-                            websites"</span>,
-                        <span class="key">availableForHire</span>: <span class="boolean">true</span>,
-                        <span class="key">superpower</span>: <span class="string">"AI-assisted development"</span>,
-                        <span class="key">contact</span>: <span class="string">"abid.koussay18@gmail.com"</span>
-                        };
-                    </div>
+                <div class="hero-image-container">
+                    <img src="profile.jpg" alt="Koussay Abid" class="hero-profile-img">
                 </div>
                 <div class="floating-badges">
                     <div class="floating-badge">⚡ 3 Projects Live</div>
@@ -2335,7 +2278,7 @@
                             <div class="highlight-item">Tunisian market optimized</div>
                         </div>
                         <div class="project-actions">
-                            <a href="#" class="btn btn-primary">View Live →</a>
+                            <a href="https://first-one-nu-eight.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary">View Live →</a>
                             <a href="#" class="btn btn-secondary">See Process →</a>
                         </div>
                     </div>
